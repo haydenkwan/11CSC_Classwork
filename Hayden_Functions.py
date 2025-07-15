@@ -17,7 +17,10 @@ def factorial(n):
     return n
 
 def output():
-    print(f'The factorial of {number} is {answer}')
+    if answer == 0:
+        print('The factorial of 0 is 1')
+    else:
+        print(f'The factorial of {number} is {answer}')
  
 # main
 number = getnum()
